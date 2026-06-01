@@ -1,0 +1,50 @@
+# Secrets — NEVER COMMIT
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Node
+node_modules/
+dist/
+build/
+.vite/
+*.log
+npm-debug.log*
+
+# Docker
+# (keep Dockerfiles & docker-compose.yml — those should be committed)
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS
+desktop.ini
+
+# Cypress (for phase 4)
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
