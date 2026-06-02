@@ -1,7 +1,5 @@
 # Secrets — NEVER COMMIT
-.env
-.env.local
-.env.*.local
+
 *.pem
 *.key
 
