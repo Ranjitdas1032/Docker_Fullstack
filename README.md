@@ -30,3 +30,6 @@ npm run cypress:run        # headless mode (faster, no UI)
 - Can delete a task
 
 Tests automatically clean up the database between runs via API calls.
+
+### Screenshot of project
+![TaskFlow Screenshot](screenshot.png)
