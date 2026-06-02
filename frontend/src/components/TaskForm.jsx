@@ -14,14 +14,15 @@ function TaskForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: 20 }}>
+    <form data-cy="form-display" onSubmit={handleSubmit} style={{ marginBottom: 20 }}>
       <input
+        data-cy="user-input"
         value={title}
         onChange={e => setTitle(e.target.value)}
         placeholder="New task title"
         style={{ padding: 8, width: 300, fontSize: 14 }}
       />
-      <button type="submit" style={{ padding: '8px 16px', marginLeft: 8 }}>
+      <button type="Add Task" style={{ padding: '8px 16px', marginLeft: 8 }}>
         Add Task
       </button>
     </form>

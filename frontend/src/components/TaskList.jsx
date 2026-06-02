@@ -6,7 +6,7 @@ function TaskList() {
 
   if (loading) return <p>Loading tasks...</p>
   if (error) return <p style={{ color: 'red' }}>Error: {error}</p>
-  if (items.length === 0) return <p>No tasks yet. Add one above!</p>
+  if (items.length === 0) return <p data-cy="intial-message">No tasks yet. Add one above!</p>
 
   const cycleStatus = (current) => {
   const order = ['pending', 'completed']   // ← match your model exactly
