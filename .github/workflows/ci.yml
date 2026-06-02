@@ -47,6 +47,9 @@ jobs:
             sleep 2
           done
 
+      - name: Fix frontend folder ownership for Cypress
+        run: sudo chown -R $(id -u):$(id -g) frontend
+
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
